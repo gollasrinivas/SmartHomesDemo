@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+
+                android:layout_height="300dp"
+                android:background="@drawable/small_bath"
+
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/tools">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+              android:textSize="25sp"
+              android:textColor="#000"
+              android:textStyle="bold"
+              android:layout_centerHorizontal="true"
+              android:id="@+id/label"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_below="@+id/label"
+                    android:layout_marginTop="22dp"
+                    android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/card"
+                app:cardCornerRadius="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_marginLeft="10dp"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+
+            <ImageView
+                    android:id="@+id/Id_Bulb"
+                    android:layout_width="50dp"
+                    android:layout_height="56dp"
+
+
+                    android:background="@drawable/bulb1"/>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+                android:id="@+id/dialogButtonOK"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:textColor="#000"
+                android:background="@drawable/small_bath"
+                android:layout_marginTop="150dp"
+                android:text=" Ok "/>
+
+        <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fan_back"
+                android:layout_alignParentTop="true"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/transparent"
+                android:layout_centerHorizontal="true">
+
+
+            <ImageView
+                    android:id="@+id/fan"
+                    android:elevation="0dp"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/dialogButtonOK"
+
+
+                    android:src="@drawable/fan1"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+                android:layout_width="55dp"
+                android:id="@+id/fire"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                app:cardCornerRadius="40dp"
+                android:layout_alignParentEnd="true"
+                app:cardBackgroundColor="@color/transparent"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp">
+
+
+            <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="31dp"
+                    app:srcCompat="@drawable/fireAlaram"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:id="@+id/card_ac"
+                app:cardElevation="0dp"
+                android:layout_marginLeft="10dp"
+                app:cardBackgroundColor="@color/transparent"
+                app:cardCornerRadius="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="73dp">
+
+
+            <ImageView
+                    android:layout_width="60dp"
+                    android:src="@drawable/ac1"
+                    android:layout_height="60dp"/>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_tv"
+                android:layout_alignParentTop="true"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/transparent"
+                android:layout_centerHorizontal="true">
+
+
+        <ImageView
+                android:id="@+id/tv"
+                android:elevation="0dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/dialogButtonOK"
+
+
+                android:src="@drawable/tv" android:layout_marginTop="72dp" android:layout_marginStart="-50dp"/>
+    </RelativeLayout></RelativeLayout>

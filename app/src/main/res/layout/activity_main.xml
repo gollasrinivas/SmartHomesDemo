@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                               xmlns:tools="http://schemas.android.com/tools"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               tools:context=".main_screen">
+    <com.jgabrielfreitas.core.BlurImageView android:layout_width="match_parent"
+                                            android:visibility="invisible"
+                                            android:id="@+id/blur_screen"
+                                            android:src="@drawable/screenshot"
+                                            android:layout_height="match_parent"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:id="@+id/main_screen"
+                    android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/gate"
+                android:layout_width="44dp"
+                android:layout_height="116dp"
+                android:layout_below="@+id/LIVINGROOM"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="13dp"
+                android:onClick="imageClicked"
+                android:layout_marginEnd="29dp"
+                android:layout_marginRight="29dp"
+                android:layout_marginBottom="28dp"
+                app:srcCompat="@drawable/blue_exit" />
+
+        <ImageView
+                android:id="@+id/KITCHEN"
+                android:layout_width="134dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="110dp"
+                android:layout_below="@id/CHILDRENBEDROOM"
+                android:onClick="imageClicked"
+                app:srcCompat="@drawable/small_bath" />
+
+        <ImageView
+                android:id="@+id/MASTERBEDRROM"
+
+                android:layout_width="158dp"
+                android:layout_height="194dp"
+
+
+
+                android:onClick="imageClicked"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                app:srcCompat="@drawable/img_screen" />
+
+        <ImageView
+                android:id="@+id/LIVINGROOM"
+                android:layout_width="148dp"
+                android:layout_height="194dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:onClick="imageClicked"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                app:srcCompat="@drawable/img_screen" />
+
+        <ImageView
+                android:id="@+id/BEDROOM_BATHROOM"
+                android:layout_width="72dp"
+                android:layout_height="53dp"
+                android:layout_alignBottom="@+id/LIVINGROOM"
+
+
+                android:layout_marginLeft="10dp"
+
+                app:srcCompat="@drawable/small_bath" />
+
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="153dp"
+                android:text="BATH\nROOM"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/textView2"
+                android:layout_width="137dp"
+                android:layout_height="30dp"
+                android:paddingLeft="10dp"
+                android:layout_alignEnd="@+id/imageView4"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="85dp"
+                android:layout_marginEnd="-60dp"
+                android:text="MASTER BEDROOM"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:text="LIVING ROOM"
+                android:textStyle="bold" />
+
+        <ImageView
+                android:id="@+id/CHILDRENBEDROOM"
+                android:layout_below="@id/MASTERBEDRROM"
+                android:layout_width="137dp"
+                android:layout_height="134dp"
+                android:onClick="imageClicked"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/img_screen" />
+
+        <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/MASTERBEDRROM"
+                android:layout_alignStart="@+id/textView"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="84dp"
+                android:text="CHILDREN \nBEDROOM"
+                android:textStyle="bold" />
+
+        <ImageView
+                android:id="@+id/BATHROOM"
+                android:layout_width="134dp"
+                android:onClick="imageClicked"
+                android:layout_height="41dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/CHILDRENBEDROOM"
+                android:layout_marginTop="40dp"
+                app:srcCompat="@drawable/small_bath" />
+
+        <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="25dp"
+
+                android:layout_below="@id/CHILDRENBEDROOM"
+                android:layout_marginBottom="151dp"
+                android:text="BATHROOM"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CHILDRENBEDROOM"
+                android:layout_alignStart="@+id/textView"
+                android:layout_marginTop="115dp"
+                android:layout_marginLeft="10dp"
+                android:text="KITCHEN"
+                android:textStyle="bold" />
+
+        <ImageView
+                android:id="@+id/WALKWAY"
+                android:layout_width="44dp"
+                android:layout_height="116dp"
+                android:onClick="imageClicked"
+                android:layout_alignStart="@+id/textView7"
+                android:layout_alignBottom="@+id/CHILDRENBEDROOM"
+                android:layout_marginTop="13dp"
+                android:layout_marginStart="-2dp"
+                android:layout_marginBottom="46dp"
+                app:srcCompat="@drawable/small_bath" />
+
+        <TextView
+                android:id="@+id/textView7"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="256dp"
+                android:text="WALK\nWAY"
+                android:textStyle="bold" />
+
+        <ImageView
+                android:id="@+id/DININGROOM"
+                android:layout_width="142dp"
+
+                android:layout_height="127dp"
+
+                android:onClick="imageClicked"
+                android:layout_below="@+id/CHILDRENBEDROOM"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-13dp"
+                android:layout_marginEnd="12dp"
+                app:srcCompat="@drawable/img_screen" />
+        <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_below="@+id/textView5"
+                android:layout_alignEnd="@+id/LIVINGROOM"
+                android:layout_marginTop="-195dp"
+                android:layout_marginEnd="20dp"
+                android:text="DINING ROOM"
+                android:textStyle="bold" />
+
+
+        <ImageView
+                android:id="@+id/POOJAROOM"
+                android:layout_width="57dp"
+                android:layout_height="54dp"
+
+
+                android:layout_above="@+id/KITCHEN"
+                android:layout_alignEnd="@+id/LIVINGROOM"
+                android:layout_marginBottom="-110dp"
+                app:srcCompat="@drawable/small_bath" />
+
+        <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_below="@+id/textView5"
+                android:layout_alignEnd="@+id/LIVINGROOM"
+                android:layout_marginTop="-151dp"
+                android:layout_marginEnd="4dp"
+                android:text="POOJA\nROOM"
+                android:textStyle="bold" />
+
+    </RelativeLayout>
+</android.widget.RelativeLayout>
